@@ -7,6 +7,7 @@ html {
 }
 
 header {
+  top: 0px;
   height: 69px;
   width: 100%;
   position: fixed;
@@ -15,7 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: black; */
+  background-color: black;
   border-bottom: 1px solid seashell;
 }
 
@@ -83,7 +84,6 @@ nav p {
 }
 
 .teas {
-  /* the padding has no effect!  */
   margin-bottom: 50px;
   width: 1000px;
   display: flex;
@@ -124,4 +124,21 @@ nav p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.contact {
+  padding-top: 50px;
+  width: 300px;
+  height: 200px;
+  line-height: .3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  padding-left: 20px;
+  padding-top: 50px;
+  align-self: flex-start;
 }
