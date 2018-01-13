@@ -37,15 +37,17 @@ nav p {
 }
 
 .content-wrap {
+  /* position at bottom of header, ie 69 pixels below its normal position */
   top: 69px;
   position: relative;
   display: flex;
+  /* the containers are stacked on top of one another */
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.mission {
+.mission-wrap {
   height: 700px;
   width: 1200px;
   background-image: url("./images/background.jpg");
@@ -54,6 +56,7 @@ nav p {
   align-items: center;
 }
 
+/* create class for text in center of page  */
 .center-text {
   display: flex;
   flex-direction: column;
@@ -62,7 +65,7 @@ nav p {
   line-height: .1;
 }
 
-.mission-text {
+.mission {
   height: 120px;
   background-color: black;
   width: 100%;
@@ -72,18 +75,18 @@ nav p {
   padding-top: 50px;
 }
 
-.container {
+.tea-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.container img {
+.tea-container img {
   height: 200px;
   width: 300px;
 }
 
-.teas {
+.teas-wrap {
   margin-bottom: 50px;
   width: 1000px;
   display: flex;
@@ -140,5 +143,6 @@ nav p {
 .copyright {
   padding-left: 20px;
   padding-top: 50px;
+  /* override default alignment of item along cross-axis (horizontal here) */
   align-self: flex-start;
 }
