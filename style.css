@@ -6,8 +6,11 @@ html {
   opacity: 0.9;
 }
 
+body {
+  margin: 0px;
+}
+
 header {
-  top: 0px;
   height: 69px;
   width: 100%;
   position: fixed;
@@ -32,16 +35,18 @@ nav {
   justify-content: space-between;
 }
 
-nav p {
-  text-decoration: underline;
+a {
+  color: white;
 }
 
 .content-wrap {
   /* position at bottom of header, ie 69 pixels below its normal position */
   top: 69px;
   position: relative;
+}
+
+.flex-container-column {
   display: flex;
-  /* the containers are stacked on top of one another */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -58,10 +63,6 @@ nav p {
 
 /* create class for text in center of page  */
 .center-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   line-height: .1;
 }
 
@@ -71,14 +72,15 @@ nav p {
   width: 100%;
 }
 
-.tea-of-month {
-  padding-top: 50px;
+.tea-of-month-wrap {
+  margin-top: 50px;
 }
 
 .tea-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 15px;
 }
 
 .tea-container img {
@@ -91,7 +93,7 @@ nav p {
   width: 1000px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .locations-background {
@@ -106,10 +108,6 @@ nav p {
 
 .locations-container {
   margin-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .locations {
@@ -123,10 +121,6 @@ nav p {
   height: 300px;
   background-color: black;
   opacity: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .contact {
@@ -134,10 +128,6 @@ nav p {
   width: 300px;
   height: 200px;
   line-height: .3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .copyright {
